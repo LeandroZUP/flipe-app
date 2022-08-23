@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1076324977848",
+    "project_id": "flipe-app",
+    "storage_bucket": "flipe-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076324977848:android:f615b787cd91fe88f1f84d",
+        "android_client_info": {
+          "package_name": "br.com.zup.flipeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1076324977848-4m2n9uilrtgm1f8bku0rt6jrkq22nj2c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnhjY5TlYpgGWoA9fK8CSqaZQ9uhSZmwI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1076324977848-4m2n9uilrtgm1f8bku0rt6jrkq22nj2c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
