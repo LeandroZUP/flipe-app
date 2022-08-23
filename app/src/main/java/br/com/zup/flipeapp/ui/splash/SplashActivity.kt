@@ -2,6 +2,7 @@ package br.com.zup.flipeapp.ui.splash
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import br.com.zup.flipeapp.R
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
