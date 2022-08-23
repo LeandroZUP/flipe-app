@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Flipe App</string>
+    <string name="description_image_splash">Logotipo do Flipe App</string>
 </resources>
