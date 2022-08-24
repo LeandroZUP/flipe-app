@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="bottom"
-        android:text="@string/tv_new_account"
+        android:text="@string/tv_filter_search"
         android:textColor="@color/green"
         android:textSize="@dimen/text_size_30"
         app:layout_constraintEnd_toEndOf="@+id/iv_logo"
@@ -44,6 +44,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/et_display_name"
         app:layout_constraintEnd_toStartOf="@+id/et_display_name"
         app:layout_constraintTop_toTopOf="@+id/et_display_name" />
+
 
     <EditText
         android:id="@+id/et_display_name"
@@ -130,10 +131,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center|start"
         android:layout_marginTop="@dimen/margin_40"
-        android:backgroundTint="@color/green"
+        android:backgroundTint="@color/black"
         android:enabled="false"
         android:text="@string/btn_login"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/et_password"
         app:layout_constraintStart_toStartOf="@+id/et_password"
@@ -153,5 +154,16 @@
         app:layout_constraintStart_toStartOf="@+id/et_password"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:contentDescription="@string/sp_car_manufacturers"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_register"
+        app:layout_constraintStart_toStartOf="@+id/btn_register"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
