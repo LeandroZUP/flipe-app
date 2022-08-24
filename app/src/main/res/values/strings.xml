@@ -6,4 +6,6 @@
     <string name="tv_forgot_password">Esqueci a senha</string>
     <string name="btn_login">Entrar</string>
     <string name="tv_new_user">É novo por aqui? Cadastre-se!</string>
+    <string name="et_display_name">Nome</string>
+    <string name="tv_new_account">Nova conta</string>
 </resources>
