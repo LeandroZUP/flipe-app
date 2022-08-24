@@ -2,4 +2,6 @@
 <resources>
     <dimen name="size_201">201dp</dimen>
     <dimen name="size_137">137dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="size_26">26dp</dimen>
 </resources>

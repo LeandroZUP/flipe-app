@@ -11,9 +11,9 @@
     <ImageView
         android:layout_width="@dimen/size_201"
         android:layout_height="@dimen/size_137"
-        android:contentDescription="@string/description_image_splash"
+        android:contentDescription="@string/cd_logo"
         android:scaleType="centerCrop"
-        android:src="@drawable/logo"
+        android:src="@drawable/iv_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
