@@ -79,7 +79,7 @@
         app:layout_constraintTop_toBottomOf="@+id/et_email" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_forgot_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="bottom"
