@@ -1,4 +1,4 @@
-package br.com.zup.flipeapp.ui.splash
+package br.com.zup.flipeapp.ui.splash.view
 
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
