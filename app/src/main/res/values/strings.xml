@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Flipe App</string>
     <string name="cd_logo">Logotipo do Flipe App</string>
+    <string name="cd_at">Arroba verde</string>
+    <string name="cd_new_user">Pessoa com Plus no lado</string>
+    <string name="cd_password">Cadeado branco</string>
     <string name="et_email">E-mail</string>
     <string name="et_password">Senha</string>
     <string name="tv_forgot_password">Esqueci a senha</string>

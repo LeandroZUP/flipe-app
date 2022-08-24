@@ -21,12 +21,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/ic_email"
+        android:id="@+id/ic_at"
+        android:layout_margin="@dimen/margin_5"
         android:layout_width="@dimen/size_30"
         android:layout_height="@dimen/size_30"
-        android:contentDescription="@string/cd_logo"
+        android:contentDescription="@string/cd_at"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_email"
+        app:layout_constraintBottom_toBottomOf="@+id/et_email"
         app:layout_constraintEnd_toStartOf="@+id/et_email"
         app:layout_constraintTop_toTopOf="@+id/et_email" />
 
@@ -35,22 +37,27 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_40"
+        android:autofillHints="yes"
         android:background="@color/white"
         android:hint="@string/et_email"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
         android:selectAllOnFocus="true"
+        android:textColorHint="#757575"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_logo"
-        android:autofillHints="yes" />
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
 
     <ImageView
         android:id="@+id/ic_password"
+        android:layout_margin="@dimen/margin_5"
         android:layout_width="@dimen/size_30"
         android:layout_height="@dimen/size_30"
-        android:contentDescription="@string/cd_logo"
+        android:contentDescription="@string/cd_password"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_password"
+        app:layout_constraintBottom_toBottomOf="@+id/et_password"
         app:layout_constraintEnd_toStartOf="@+id/et_password"
         app:layout_constraintTop_toTopOf="@+id/et_password" />
 
@@ -59,16 +66,20 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_40"
+        android:autofillHints="yes"
         android:background="@color/white"
         android:hint="@string/et_password"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         android:selectAllOnFocus="true"
+        android:textAlignment="center"
+        android:textColorHint="#757575"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_email"
-        android:autofillHints="yes" />
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="bottom"
@@ -81,11 +92,12 @@
         android:id="@+id/btn_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center|start"
+        android:layout_gravity="center"
         android:layout_marginTop="@dimen/margin_40"
         android:backgroundTint="@color/orange"
         android:enabled="false"
         android:text="@string/btn_login"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/et_password"
         app:layout_constraintStart_toEndOf="@+id/ic_password"

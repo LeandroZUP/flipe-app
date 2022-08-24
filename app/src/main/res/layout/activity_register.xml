@@ -38,7 +38,7 @@
         android:layout_margin="@dimen/margin_5"
         android:layout_width="@dimen/size_30"
         android:layout_height="@dimen/size_30"
-        android:contentDescription="@string/cd_logo"
+        android:contentDescription="@string/cd_new_user"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_new_user"
         app:layout_constraintBottom_toBottomOf="@+id/et_display_name"
@@ -95,10 +95,10 @@
 
     <ImageView
         android:id="@+id/ic_password"
+        android:layout_margin="@dimen/margin_5"
         android:layout_width="@dimen/size_30"
         android:layout_height="@dimen/size_30"
-        android:layout_margin="@dimen/margin_5"
-        android:contentDescription="@string/cd_logo"
+        android:contentDescription="@string/cd_password"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_password"
         app:layout_constraintBottom_toBottomOf="@+id/et_password"
