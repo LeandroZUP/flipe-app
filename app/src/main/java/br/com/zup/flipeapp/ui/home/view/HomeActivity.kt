@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import android.widget.SearchView
 import androidx.lifecycle.ViewModelProvider
 import br.com.zup.flipeapp.R
 import br.com.zup.flipeapp.databinding.ActivityHomeBinding
@@ -14,10 +15,12 @@ import br.com.zup.flipeapp.ui.login.view.LoginActivity
 import br.com.zup.flipeapp.utilities.HELLO
 
 class HomeActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityHomeBinding
     private val viewModel: HomeViewModel by lazy {
         ViewModelProvider(this)[HomeViewModel::class.java]
     }
+    private lateinit var searchView: SearchView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +37,10 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater: MenuInflater = menuInflater
         inflater.inflate(R.menu.menu_home, menu)
+
+        val searchItem = menu.findItem(R.id.thunder_search)
+        searchView = searchItem?.actionView as SearchView
+        searchView.isIconified = false
         return true
     }
 
@@ -64,6 +71,4 @@ class HomeActivity : AppCompatActivity() {
     private fun goToLogin() {
         startActivity(Intent(this, LoginActivity::class.java))
     }
-
-
 }
