@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Flipe App</string>
+    <string name="app_name" translatable="false">Flipe App</string>
     <string name="cd_logo">Logotipo do Flipe App</string>
     <string name="cd_at">Arroba verde</string>
     <string name="cd_new_user">Pessoa com Plus no lado</string>
@@ -8,7 +8,8 @@
     <string name="et_password">Senha</string>
     <string name="tv_forgot_password">Esqueci a senha</string>
     <string name="btn_login">Entrar</string>
-    <string name="tv_new_user">Sou novo!</string>
+    <string name="tv_new_user">É novo? Cadastre aqui</string>
+    <string name="btn_register">Registrar</string>
     <string name="tv_back_to_login">Tenho uma conta!</string>
     <string name="et_display_name">Nome</string>
     <string name="tv_new_account">Nova conta</string>

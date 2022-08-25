@@ -3,15 +3,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:background="@drawable/background"
     android:layout_height="match_parent"
-    tools:context=".ui.splash.view.SplashActivity"
-    android:background="@drawable/background">
+    android:layout_width="match_parent"
+    tools:context=".ui.splash.view.SplashActivity" >
 
     <ImageView
-        android:layout_width="@dimen/size_201"
-        android:layout_height="@dimen/size_137"
         android:contentDescription="@string/cd_logo"
+        android:layout_height="@dimen/dimen_137"
+        android:layout_width="@dimen/dimen_201"
         android:scaleType="centerCrop"
         android:src="@drawable/iv_logo"
         app:layout_constraintBottom_toBottomOf="parent"
