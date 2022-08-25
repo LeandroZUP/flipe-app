@@ -13,7 +13,7 @@
     <string name="tv_back_to_login">Tenho uma conta!</string>
     <string name="et_display_name">Nome</string>
     <string name="tv_new_account">Nova conta</string>
-    <string name="tv_hello">Olá, $USERNAME</string>
+    <string name="tv_hello">Olá, </string>
     <string name="tv_filter_search">Filtrar busca</string>
     <string name="tv_filtered_search">Busca filtrada</string>
     <string name="sp_car_manufacturers">Todos fabricantes</string>
