@@ -1,4 +1,4 @@
-package br.com.zup.flipeapp.domain
+package br.com.zup.flipeapp.domain.repository
 
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.AuthResult
