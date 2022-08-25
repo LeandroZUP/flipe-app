@@ -2,6 +2,7 @@ package br.com.zup.flipeapp.ui.login.view
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import br.com.zup.flipeapp.data.model.User
@@ -42,8 +43,8 @@ class LoginActivity : AppCompatActivity() {
 
     private fun getDataUser(): User {
         return User(
-            email = binding.etEmail.text.toString().lowercase(),
-            password = binding.etPassword.text.toString().lowercase()
+            email = binding.etEmail.text.toString(),
+            password = binding.etPassword.text.toString()
         )
     }
 

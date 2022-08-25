@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import br.com.zup.flipeapp.data.model.User
-import br.com.zup.flipeapp.domain.AuthenticationRepository
+import br.com.zup.flipeapp.domain.repository.AuthenticationRepository
 import br.com.zup.flipeapp.utilities.EMAIL_ERROR_MESSAGE
 import br.com.zup.flipeapp.utilities.LOGIN_ERROR_MESSAGE
 import br.com.zup.flipeapp.utilities.PASSWORD_ERROR_MESSAGE
