@@ -26,5 +26,8 @@
     <string name="tv_like">Favoritos</string>
     <string name="tv_history">Histórico de Valores</string>
     <string name="tv_vehicle_images">Imagens do automóvel</string>
+    <string name="mn_exit">Sair</string>
+    <string name="mn_thunder_search">Busca rápida</string>
+    <string name="mn_bookmark">Curtidos</string>
 
 </resources>
