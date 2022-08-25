@@ -9,7 +9,7 @@ import br.com.zup.flipeapp.domain.repository.AuthenticationRepository
 import br.com.zup.flipeapp.utilities.*
 
 class RegisterViewModel : ViewModel() {
-    private val authenticationRepository = AuthenticationRepository.AuthenticationRepository()
+    private val authenticationRepository = AuthenticationRepository()
 
     private var _registerState = MutableLiveData<User>()
     val registerState: LiveData<User> = _registerState

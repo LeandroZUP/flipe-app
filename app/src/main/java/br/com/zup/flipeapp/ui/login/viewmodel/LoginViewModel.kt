@@ -10,7 +10,7 @@ import br.com.zup.flipeapp.utilities.LOGIN_ERROR_MESSAGE
 import br.com.zup.flipeapp.utilities.PASSWORD_ERROR_MESSAGE
 
 class LoginViewModel : ViewModel() {
-    private val authenticationRepository = AuthenticationRepository.AuthenticationRepository()
+    private val authenticationRepository = AuthenticationRepository()
 
     private var _loginState = MutableLiveData<Boolean>()
     val loginState: LiveData<Boolean> = _loginState
