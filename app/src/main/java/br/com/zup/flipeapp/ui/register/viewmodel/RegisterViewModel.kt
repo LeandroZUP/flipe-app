@@ -36,7 +36,7 @@ class RegisterViewModel : ViewModel() {
     }
 
     private fun validateNameField(user: User): Boolean {
-        val regex = Regex("[a-zA-Z ]+")
+        val regex = Regex("[a-zA-Z]+")
 
         when {
             user.name.isEmpty() -> {

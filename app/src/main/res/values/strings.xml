@@ -8,7 +8,8 @@
     <string name="et_password">Senha</string>
     <string name="tv_forgot_password">Esqueci a senha</string>
     <string name="btn_login">Entrar</string>
-    <string name="tv_new_user">É novo por aqui? Cadastre-se!</string>
+    <string name="tv_new_user">Sou novo!</string>
+    <string name="tv_back_to_login">Tenho uma conta!</string>
     <string name="et_display_name">Nome</string>
     <string name="tv_new_account">Nova conta</string>
     <string name="tv_hello">Olá, $USERNAME</string>

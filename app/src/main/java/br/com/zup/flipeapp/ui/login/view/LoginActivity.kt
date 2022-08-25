@@ -42,8 +42,8 @@ class LoginActivity : AppCompatActivity() {
 
     private fun getDataUser(): User {
         return User(
-            email = binding.etEmail.text.toString(),
-            password = binding.etPassword.text.toString()
+            email = binding.etEmail.text.toString().lowercase(),
+            password = binding.etPassword.text.toString().lowercase()
         )
     }
 

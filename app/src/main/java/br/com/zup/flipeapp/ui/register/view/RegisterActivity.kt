@@ -25,10 +25,10 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(binding.root)
         initObservers()
         clickOnSaveButton()
-        clickOntextLogin()
+        clickOnTextLogin()
     }
 
-    private fun clickOntextLogin() {
+    private fun clickOnTextLogin() {
         binding.tvBackToLogin.setOnClickListener {
             goToLogin()
         }
@@ -48,8 +48,8 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun getDataUser(): User {
         return User(
-            name = binding.etDisplayName.text.toString(),
-            email = binding.etEmail.text.toString(),
+            name = binding.etDisplayName.text.toString().lowercase(),
+            email = binding.etEmail.text.toString().lowercase(),
             password = binding.etPassword.text.toString()
         )
     }
