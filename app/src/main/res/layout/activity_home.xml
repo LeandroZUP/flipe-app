@@ -1,99 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/background"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    tools:context=".ui.register.view.RegisterActivity">
+    tools:context=".ui.register.view.RegisterActivity" >
 
-<!--    TODO Arrange home layout-->
-    <TextView
-        android:id="@+id/tv_filter_search"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_24"
-        android:gravity="bottom"
-        android:text="@string/tv_filter_search"
-        android:textColor="@color/green"
-        android:textSize="@dimen/text_size_30"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_width="match_parent" >
 
-    <Spinner
-        android:id="@+id/sp_car_manufacturers"
-        android:background="@color/white"
-        android:hint="@string/sp_car_manufacturers"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dimen_40"
-        android:minHeight="48dp"
-        android:textAlignment="center"
-        android:textColorHint="#757575"
-        android:textSize="@dimen/text_size_20"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_filter_search" />
+    <!--    TODO Arrange home layout-->
+        <TextView
+            android:id="@+id/tv_filter_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24"
+            android:gravity="bottom"
+            android:text="@string/tv_filter_search"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_size_30"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Spinner
-        android:id="@+id/sp_car_model"
-        android:background="@color/white"
-        android:hint="@string/sp_car_model"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dimen_40"
-        android:minHeight="48dp"
-        android:textAlignment="center"
-        android:textColorHint="#757575"
-        android:textSize="@dimen/text_size_20"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sp_car_manufacturers" />
+        <Spinner
+            android:id="@+id/sp_car_manufacturers"
+            android:background="@color/white"
+            android:hint="@string/sp_car_manufacturers"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_40"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColorHint="#757575"
+            android:textSize="@dimen/text_size_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_filter_search" />
 
-    <Spinner
-        android:id="@+id/sp_car_model_year"
-        android:background="@color/white"
-        android:hint="@string/sp_car_model"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/dimen_40"
-        android:minHeight="48dp"
-        android:textAlignment="center"
-        android:textColorHint="#757575"
-        android:textSize="@dimen/text_size_20"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sp_car_model" />
+        <Spinner
+            android:id="@+id/sp_car_model"
+            android:background="@color/white"
+            android:hint="@string/sp_car_model"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_40"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColorHint="#757575"
+            android:textSize="@dimen/text_size_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sp_car_manufacturers" />
 
-    <Button
-        android:backgroundTint="@color/orange"
-        android:fontFamily="monospace"
-        android:id="@+id/btn_search"
-        android:layout_height="@dimen/dimen_48"
-        android:layout_margin="@dimen/dimen_30"
-        android:layout_width="match_parent"
-        android:text="@string/btn_search"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="@dimen/text_size_18"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/sp_car_model_year"
-        app:layout_constraintStart_toStartOf="@+id/sp_car_model_year"
-        app:layout_constraintTop_toBottomOf="@+id/sp_car_model_year" />
+        <Spinner
+            android:id="@+id/sp_car_model_year"
+            android:background="@color/white"
+            android:hint="@string/sp_car_model"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_40"
+            android:minHeight="48dp"
+            android:textAlignment="center"
+            android:textColorHint="#757575"
+            android:textSize="@dimen/text_size_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sp_car_model" />
 
-    <ProgressBar
-        android:id="@+id/pb_loading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="64dp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_search"
-        app:layout_constraintEnd_toEndOf="@+id/btn_search"
-        app:layout_constraintStart_toStartOf="@+id/btn_search"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:backgroundTint="@color/orange"
+            android:fontFamily="monospace"
+            android:id="@+id/btn_search"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_margin="@dimen/dimen_30"
+            android:layout_width="match_parent"
+            android:text="@string/btn_search"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/sp_car_model_year"
+            app:layout_constraintStart_toStartOf="@+id/sp_car_model_year"
+            app:layout_constraintTop_toBottomOf="@+id/sp_car_model_year" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ProgressBar
+            android:id="@+id/pb_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="64dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_search"
+            app:layout_constraintEnd_toEndOf="@+id/btn_search"
+            app:layout_constraintStart_toStartOf="@+id/btn_search"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
