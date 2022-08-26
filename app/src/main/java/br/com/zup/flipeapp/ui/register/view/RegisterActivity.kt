@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import br.com.zup.flipeapp.data.model.User
+import br.com.zup.flipeapp.data.model.user.User
 import br.com.zup.flipeapp.databinding.ActivityRegisterBinding
 import br.com.zup.flipeapp.ui.home.view.HomeActivity
 import br.com.zup.flipeapp.ui.login.view.LoginActivity

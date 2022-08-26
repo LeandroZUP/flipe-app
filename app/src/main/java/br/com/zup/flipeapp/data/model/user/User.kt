@@ -1,4 +1,4 @@
-package br.com.zup.flipeapp.data.model
+package br.com.zup.flipeapp.data.model.user
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
