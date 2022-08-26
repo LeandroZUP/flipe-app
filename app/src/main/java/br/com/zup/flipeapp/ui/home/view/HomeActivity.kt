@@ -27,6 +27,7 @@ class HomeActivity : AppCompatActivity() {
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar()
+        viewModel.getAllNetwork()
         }
 
     private fun supportActionBar() {
