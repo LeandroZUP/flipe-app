@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".ui.register.view.RegisterActivity" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" >
+
+        <ImageView
+            android:contentDescription="@string/cd_logo"
+            android:id="@+id/iv_logo"
+            android:layout_marginTop="@dimen/dimen_48"
+            android:layout_height="@dimen/dimen_137"
+            android:layout_width="@dimen/dimen_201"
+            android:scaleType="centerCrop"
+            android:src="@drawable/iv_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:fontFamily="monospace"
+            android:gravity="bottom"
+            android:id="@+id/tv_new_account"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_width="wrap_content"
+            android:text="@string/tv_new_account"
+            android:textAllCaps="false"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_size_30"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logo" />
+
+        <EditText
+            android:autofillHints="emailAddress"
+            android:background="@drawable/et_format"
+            android:drawableStart="@drawable/ic_new_user"
+            android:drawablePadding="@dimen/dimen_8"
+            android:fontFamily="monospace"
+            android:hint="@string/et_display_name"
+            android:id="@+id/et_display_name"
+            android:inputType="text"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_margin="@dimen/dimen_30"
+            android:layout_width="match_parent"
+            android:paddingEnd="@dimen/dimen_4"
+            android:paddingStart="@dimen/dimen_4"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_new_account"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:autofillHints="emailAddress"
+            android:background="@drawable/et_format"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="@dimen/dimen_8"
+            android:fontFamily="monospace"
+            android:hint="@string/et_email"
+            android:id="@+id/et_email"
+            android:inputType="textEmailAddress"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_margin="@dimen/dimen_30"
+            android:layout_width="match_parent"
+            android:paddingEnd="@dimen/dimen_4"
+            android:paddingStart="@dimen/dimen_4"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_display_name" />
+
+        <EditText
+            android:autofillHints="password"
+            android:background="@drawable/et_format"
+            android:drawableStart="@drawable/ic_password"
+            android:drawablePadding="@dimen/dimen_12"
+            android:fontFamily="monospace"
+            android:hint="@string/et_password"
+            android:id="@+id/et_password"
+            android:inputType="textPassword"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_margin="@dimen/dimen_30"
+            android:layout_width="match_parent"
+            android:paddingEnd="@dimen/dimen_12"
+            android:paddingStart="@dimen/dimen_12"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+        <Button
+            android:backgroundTint="@color/green"
+            android:fontFamily="monospace"
+            android:id="@+id/btn_register"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_margin="@dimen/dimen_30"
+            android:layout_width="match_parent"
+            android:text="@string/btn_register"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/et_password"
+            app:layout_constraintStart_toStartOf="@+id/et_password"
+            app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+        <TextView
+            android:fontFamily="monospace"
+            android:gravity="bottom"
+            android:id="@+id/tv_back_to_login"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_8"
+            android:layout_width="wrap_content"
+            android:text="@string/tv_back_to_login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

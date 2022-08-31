@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".ui.home.view.HomeActivity" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" >
+
+        <TextView
+            android:gravity="bottom"
+            android:id="@+id/tv_filter_search"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24"
+            android:layout_width="wrap_content"
+            android:text="@string/tv_filter_search"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_size_30"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:background="@color/black_70"
+            android:id="@+id/sp_car_manufacturers"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:layout_width="@dimen/dimen_0"
+            android:minHeight="@dimen/dimen_48"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/text_size_20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_filter_search" />
+
+        <Spinner
+            android:background="@color/black_50"
+            android:id="@+id/sp_car_model"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24"
+            android:layout_width="@dimen/dimen_0"
+            android:minHeight="@dimen/dimen_48"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/text_size_20"
+            app:layout_constraintEnd_toEndOf="@+id/sp_car_manufacturers"
+            app:layout_constraintStart_toStartOf="@+id/sp_car_manufacturers"
+            app:layout_constraintTop_toBottomOf="@+id/sp_car_manufacturers" />
+
+        <Spinner
+            android:background="@color/black_30"
+            android:id="@+id/sp_model_year"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24"
+            android:layout_width="@dimen/dimen_0"
+            android:minHeight="@dimen/dimen_48"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/text_size_20"
+            app:layout_constraintEnd_toEndOf="@+id/sp_car_model"
+            app:layout_constraintStart_toStartOf="@+id/sp_car_model"
+            app:layout_constraintTop_toBottomOf="@+id/sp_car_model" />
+
+        <EditText
+            android:background="@drawable/et_value"
+            android:drawableStart="@drawable/ic_price"
+            android:drawablePadding="@dimen/dimen_8"
+            android:fontFamily="monospace"
+            android:hint="@string/lv_minimum"
+            android:id="@+id/et_minimum"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:layout_width="150dp"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_margin="@dimen/dimen_30"
+            android:layout_marginTop="28dp"
+            android:paddingStart="@dimen/dimen_12"
+            android:paddingEnd="@dimen/dimen_12"
+            android:textAlignment="textStart"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sp_model_year" />
+
+        <EditText
+            android:background="@drawable/et_value"
+            android:drawableStart="@drawable/ic_price"
+            android:drawablePadding="@dimen/dimen_8"
+            android:fontFamily="monospace"
+            android:hint="@string/lv_maximum"
+            android:id="@+id/et_maximum"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:layout_width="150dp"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_margin="@dimen/dimen_30"
+            android:layout_marginTop="28dp"
+            android:paddingStart="@dimen/dimen_12"
+            android:paddingEnd="@dimen/dimen_12"
+            android:textAlignment="textStart"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sp_model_year" />
+
+        <Button
+            android:backgroundTint="@color/black_20"
+            android:fontFamily="monospace"
+            android:id="@+id/btn_search"
+            android:layout_height="@dimen/dimen_48"
+            android:layout_margin="@dimen/dimen_30"
+            android:layout_width="match_parent"
+            android:text="@string/btn_search"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/et_minimum" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

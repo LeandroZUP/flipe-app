@@ -1,3 +1,50 @@
 <resources>
-    <string name="app_name">Flipe App</string>
+    <string name="app_name" translatable="false">Flipe App</string>
+    <string name="cd_logo">Logotipo do Flipe App</string>
+    <string name="cd_at">Arroba verde</string>
+    <string name="cd_new_user">Pessoa com Plus no lado</string>
+    <string name="cd_password">Cadeado branco</string>
+    <string name="et_email">E-mail</string>
+    <string name="et_password">Senha</string>
+    <string name="tv_forgot_password">Esqueci a senha</string>
+    <string name="btn_login">Entrar</string>
+    <string name="tv_new_user">É novo? Cadastre aqui</string>
+    <string name="btn_register">Registrar</string>
+    <string name="tv_back_to_login">Tenho uma conta!</string>
+    <string name="et_display_name">Nome</string>
+    <string name="tv_new_account">Nova conta</string>
+    <string name="tv_hello">Olá, </string>
+    <string name="tv_home">Filtrar Busca</string>
+    <string name="tv_filtered_search">Busca filtrada</string>
+    <string name="sp_car_manufacturers">Todos fabricantes</string>
+    <string name="sp_car_model">Todos os modelos</string>
+    <string name="lv_year">Todos os anos</string>
+    <string name="lv_minimum">Mínimo</string>
+    <string name="lv_maximum">Máximo</string>
+    <string name="btn_search">Pesquisar</string>
+    <string name="et_thunder_search">Busca rápida</string>
+    <string name="tv_like">Favoritos</string>
+    <string name="tv_history">Histórico de Valores</string>
+    <string name="tv_vehicle_images">Imagens do automóvel</string>
+    <string name="mn_exit">Sair</string>
+    <string name="mn_thunder_search">Busca rápida</string>
+    <string name="mn_bookmark">Veículos favoritos</string>
+    <string name="btn_bookmark">Favoritos</string>
+    <string name="tv_filter_search">Busca Filtrada</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="tv_car_model">Carro Modelo</string>
+    <string name="tv_year_model">1994</string>
+    <string name="tv_fuel_type">Gasolina</string>
+    <string name="tv_car_manufacturer">Gurgel</string>
+    <string name="tv_price">18.431</string>
+    <string name="ib_binocular">Binóculo</string>
+    <string name="btn_veiculo">Veículo</string>
+
 </resources>
