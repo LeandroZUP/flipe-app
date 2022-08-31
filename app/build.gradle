@@ -37,6 +37,9 @@ android {
     viewBinding {
         enabled = true
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -66,11 +69,16 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.9.0'
     implementation "com.squareup.retrofit2:converter-gson:2.6.0"
 
+    // --- LOTTIE ANIMATION ---
+    implementation 'com.airbnb.android:lottie:3.4.0'
+
     // --- NETWORK CONNECTIONS ---
     implementation "com.squareup.retrofit2:retrofit:2.9.0"
     implementation "com.squareup.okhttp3:logging-interceptor:4.2.1"
 
     // --- ROOM DATABASE ---
+    implementation 'androidx.room:room-ktx:2.4.3'
     implementation 'androidx.room:room-runtime:2.4.3'
     kapt "androidx.room:room-compiler:2.4.3"
+
 }

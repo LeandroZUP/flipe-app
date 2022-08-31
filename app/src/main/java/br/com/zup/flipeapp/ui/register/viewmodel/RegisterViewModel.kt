@@ -37,7 +37,6 @@ class RegisterViewModel : ViewModel() {
 
     private fun validateNameField(user: User): Boolean {
         val regex = Regex("[a-zA-Z]+")
-
         when {
             user.name.isEmpty() -> {
                 _errorState.value = NAME_ERROR_MESSAGE
@@ -54,7 +53,6 @@ class RegisterViewModel : ViewModel() {
         }
         return false
     }
-
 
     private fun validateEmailField(user: User): Boolean {
         return if (user.email.isNotEmpty() && Patterns.EMAIL_ADDRESS.matcher(user.email)

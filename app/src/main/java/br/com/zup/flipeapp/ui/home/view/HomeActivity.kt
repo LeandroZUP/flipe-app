@@ -6,59 +6,45 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
-import android.widget.SearchView
 import androidx.lifecycle.ViewModelProvider
 import br.com.zup.flipeapp.R
 import br.com.zup.flipeapp.databinding.ActivityHomeBinding
+import br.com.zup.flipeapp.ui.bookmark.view.BookmarkActivity
 import br.com.zup.flipeapp.ui.home.viewmodel.HomeViewModel
 import br.com.zup.flipeapp.ui.login.view.LoginActivity
 import br.com.zup.flipeapp.utilities.HELLO
 
 class HomeActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivityHomeBinding
     private val viewModel: HomeViewModel by lazy {
         ViewModelProvider(this)[HomeViewModel::class.java]
     }
-    private lateinit var searchView: SearchView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar()
-        viewModel.getAllNetwork()
-        }
-
-    private fun supportActionBar() {
-//        supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.title = HELLO + viewModel.getDisplayName()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater: MenuInflater = menuInflater
         inflater.inflate(R.menu.menu_home, menu)
-
-        val searchItem = menu.findItem(R.id.thunder_search)
-        searchView = searchItem?.actionView as SearchView
-        searchView.isIconified = false
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            //TODO Implement thunder_search layout
-//            R.id.thunder_search -> {
-//                goToSearch()
-//                true
-//            }
-            //TODO Implement bookmark layout
-//            R.id.bookmark -> {
-//                goToBookmark()
-//                true
-//            }
+            R.id.bookmark -> {
+                goToBookmark()
+                true
+            }
+            R.id.thunder_search -> {
+            // TODO viewSearch
+                true
+            }
             R.id.exit -> {
-                viewModel.logoutUser()
+                viewModel.logout()
                 goToLogin()
                 this.finish()
                 true
@@ -69,7 +55,15 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
-    private fun goToLogin() {
+    private fun supportActionBar() {
+        supportActionBar?.title = HELLO + viewModel.getDisplayName()
+    }
+
+    internal fun goToBookmark() {
+        startActivity(Intent(this, BookmarkActivity::class.java))
+    }
+
+    internal fun goToLogin() {
         startActivity(Intent(this, LoginActivity::class.java))
     }
 }

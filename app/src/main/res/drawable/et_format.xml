@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--The outline turns to colorPrimary when the EditText is in focus-->
     <item android:state_enabled="true"

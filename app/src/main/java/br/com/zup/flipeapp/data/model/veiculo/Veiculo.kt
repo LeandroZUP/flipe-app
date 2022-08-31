@@ -23,5 +23,6 @@ data class Veiculo(
     @SerializedName("TipoVeiculo")
     val tipoVeiculo: Int,
     @SerializedName("Valor")
-    val valor: String
+    val valor: String,
+    var bookmarked: Boolean = false
 ): Parcelable

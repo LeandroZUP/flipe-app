@@ -12,3 +12,13 @@ const val EMAIL_INVALID = "E-mail inválido!"
 const val NAME_ALPHABETICAL_CHARACTERS = "Digite apenas caracteres alfabéticos no campo de nome"
 const val EMAIL_FORMAT = "@zup.com.br"
 const val HELLO = "Olá, "
+const val SEARCH_TITLE = "Busca rápida"
+const val BOOKMARK_TITLE = "Veículos Favoritos"
+
+const val MESSAGE_FAIL_LOAD_VEICULO_LIST = "Erro ao carregar modelos de carro"
+const val MESSAGE_SUCCESS_VEICULO_ADDED = "Veículo favoritado"
+const val MESSAGE_FAIL_NVEICULO_ADDED = "Veículo não pôde ser favoritado"
+const val MESSAGE_SUCCESS_VEICULO_DELETED = "Veículo desfavoritado"
+const val MESSAGE_FAIL_VEICULO_DELETED = "Veículo não pôde ser desfavoritado"
+
+
