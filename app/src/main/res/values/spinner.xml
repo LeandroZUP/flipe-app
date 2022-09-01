@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array
+        name="spinner_car_manufacturer">
+        <item>Volkswagem</item>
+        <item>Fiat</item>
+        <item>Renault</item>
+        <item>Citröen</item>
+    </string-array>
+
+    <string-array
+        name="spinner_car_model">
+        <item>Gol</item>
+        <item>Kombi</item>
+        <item>Fusca</item>
+        <item>Nivus</item>
+    </string-array>
+
+    <string-array
+        name="spinner_model_year">
+        <item>2016</item>
+        <item>1990</item>
+        <item>2018</item>
+        <item>2021</item>
+    </string-array>
+</resources>

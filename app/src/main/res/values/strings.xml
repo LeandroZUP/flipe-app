@@ -18,6 +18,7 @@
     <string name="tv_filtered_search">Busca filtrada</string>
     <string name="sp_car_manufacturers">Todos fabricantes</string>
     <string name="sp_car_model">Todos os modelos</string>
+    <string name="sp_model_year">Todos os modelos</string>
     <string name="lv_year">Todos os anos</string>
     <string name="lv_minimum">Mínimo</string>
     <string name="lv_maximum">Máximo</string>
